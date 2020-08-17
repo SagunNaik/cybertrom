@@ -31,8 +31,8 @@ include ("../dbConnect.php");
 					}
 					.h2d{margin-left: auto;margin-right: auto; text-align: center;}
 					.image{display:block;border: 2px solid gray; float: right;margin-right: 25px;}
-					.name{margin-top: 25px; padding: 10px;margin-left:2px;}
-					.ndiv{padding: 10px;}
+					.name{margin-top: 25px;}
+					.ndiv{padding: 10px;margin-left:5px;}
 					</style>
 				</head>
 			<body >
@@ -42,9 +42,10 @@ include ("../dbConnect.php");
 						<img src="'.$dir.$row["photo"].'" width="100" height="100" class="image">
 					</div>
 					
-					<div class="name">
+					<div class="name ndiv">
 						<strong>Name:</strong>     '.$row["name"].'
 
+					</div>
 					<div class="ndiv">
 						<strong>Address:</strong>     '.$row["address"].'
 					</div>
