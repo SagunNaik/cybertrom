@@ -1,2 +1,13 @@
+
+for generation  of pdf file 
 https://github.com/mpdf/mpdf
+=======================================================
+for php reference
+https://www.w3schools.com/php/default.asp
+=======================================================
+CSS framework
+https://getbootstrap.com/docs/3.4/css/
+
+
+
 
