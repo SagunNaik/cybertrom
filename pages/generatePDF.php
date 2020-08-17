@@ -27,7 +27,7 @@ include ("../dbConnect.php");
 				<head>
 					<style>
 					.container{
-						margin-right: 20%;margin-left: 20%;display: block;border: 2px solid gray; padding-bottom:50px;
+						border: 2px solid gray; padding-bottom:50px;
 					}
 					.h2d{margin-left: auto;margin-right: auto; text-align: center;}
 					.image{display:block;border: 2px solid gray; float: right;margin-right: 25px;}
