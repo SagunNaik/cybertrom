@@ -1,2 +1,8 @@
+for pdf conversion library
 https://github.com/mpdf/mpdf
 
+for php reference
+https://www.w3schools.com/php/default.asp
+
+css Framework
+https://getbootstrap.com/docs/3.4/css/
