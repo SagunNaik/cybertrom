@@ -3,6 +3,10 @@ session_start();
 include ("../dbConnect.php");
 	$dir="../dummy_pic/";
 
+	if(!$_SESSION['loign_status']){
+		header('Location:../index.php');
+	}
+
 	if(isset($_GET['page']))
 	{
 		$page=$_GET['page'];
@@ -21,7 +25,7 @@ include ("../dbConnect.php");
  <html lang="en">
   <meta name="viewport" content="width=device-width, initial-scale=1">
  <head>
- 	<title>Home</title>
+ 	<title>Admin</title>
  	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
 	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
      <link href="../css/main.css" rel="stylesheet">
@@ -89,7 +93,7 @@ include ("../dbConnect.php");
 				echo '<a class=" btn btn-warning btn-sm btn-space-page " role="button" href="adminHome.php?page='.($page-1).'">Prev</a>';
 			}
 
-			for($i=1;$i<$page_no;$i++){
+			for($i=1;$i<=$page_no;$i++){
 				echo '<a class=" btn btn-primary btn-sm btn-space-page " role="button" href="adminHome.php?page='.$i.'">'.$i.'</a>';
 			}
 

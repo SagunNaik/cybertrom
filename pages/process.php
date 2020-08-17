@@ -21,6 +21,7 @@ if($username==$row["username"])
 {
 	$flag=1;
 	$_SESSION['name']=$row["Name"];
+	$_SESSION['loign_status']=TRUE;
 	
 	// close db connection
 	$conn->close();

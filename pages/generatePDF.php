@@ -71,7 +71,7 @@ include ("../dbConnect.php");
 
 	//output PDF
 	$filename=$row["name"].".pdf";
-	$mpdf->output($filename,"D");
+	$mpdf->output($filename,"I");
 	//$mpdf->output($filename,"I");
 
 	header("refresh:1;url=adminHome.php");
